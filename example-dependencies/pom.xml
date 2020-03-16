@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <properties>
+        <rabbitmq-configuration.version>1.0-SNAPSHOT</rabbitmq-configuration.version>
+        <rabbitmq-services.version>1.0-SNAPSHOT</rabbitmq-services.version>
+
+
+        <spring-rabbit.version>2.2.5.RELEASE</spring-rabbit.version>
+        <spring-amqp-starter.version>2.2.5.RELEASE</spring-amqp-starter.version>
+    </properties>
+    <groupId>tr.example</groupId>
+    <artifactId>example-dependencies</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>tr.example</groupId>
+                <artifactId>rabbitmq-configuration</artifactId>
+                <version>${rabbitmq-configuration.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>tr.example</groupId>
+                <artifactId>rabbitmq-services</artifactId>
+                <version>${rabbitmq-services.version.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.springframework.amqp</groupId>
+                <artifactId>spring-rabbit</artifactId>
+                <version>${spring-rabbit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+                <version>${spring-amqp-starter.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
